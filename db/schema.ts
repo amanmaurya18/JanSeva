@@ -1,0 +1,3 @@
+import {sqliteTable,text,integer} from 'drizzle-orm/sqlite-core';
+export const reports=sqliteTable('reports',{id:text('id').primaryKey(),area:text('area').notNull(),description:text('description').notNull(),category:text('category').notNull(),severity:integer('severity').notNull(),status:text('status').notNull().default('Received'),created:text('created').notNull(),language:text('language').notNull(),source:text('source').notNull()});
+export const decisions=sqliteTable('decisions',{id:text('id').primaryKey(),area:text('area').notNull(),status:text('status').notNull(),note:text('note').notNull(),created:text('created').notNull()});
