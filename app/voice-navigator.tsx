@@ -4,7 +4,7 @@ import {Mic,X,MessageSquareText,BookOpen,LayoutDashboard,Layers} from 'lucide-re
 export function destinationFor(text:string){
  const t=text.toLowerCase().trim();
  if(/track|status|reports|स्थिति|मेरी शिकायत|शिकायतें|रिपोर्ट देख/.test(t))return 'Citizen reports';
- if(/complaint|report|issue|शिकायत|समस्या|रिपोर्ट|shikayat/.test(t))return 'complaint';
+ if(/complaint|report|issue|drain|road|water|light|power|hospital|school|सड़क|पानी|बिजली|नाली|सफ़ाई|कचरा|अस्पताल|स्कूल|शिकायत|समस्या|रिपोर्ट|shikayat/.test(t))return 'complaint';
  if(/about|help|मदद|जानकारी|कैसे/.test(t))return 'about';
  if(/project|plan|budget|योजना|बजट/.test(t))return 'Project planner';
  if(/impact|evidence|प्रभाव|सबूत/.test(t))return 'Impact & evidence';
