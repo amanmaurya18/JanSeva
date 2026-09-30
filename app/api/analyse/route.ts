@@ -1,12 +1,11 @@
 import {analyse} from '../../../lib/model';
-
 export async function POST(req:Request){
   const b:any=await req.json();
   if(!b||typeof b!=="object")return Response.json({error:"Invalid request"},{status:400});
   if(typeof b.text!=='string'||b.text.length>2000)return Response.json({error:'Invalid text'},{status:400});
   const fallback=analyse(b.text);
-  const key=process.env.GEMINI_API_KEY;
-  const model=process.env.GEMINI_MODEL;
+  const key=process.env.GEMINI_API_KEY||(globalThis as any).GEMINI_API_KEY;
+  const model=process.env.GEMINI_MODEL||(globalThis as any).GEMINI_MODEL;
   if(!key||!model)return Response.json(fallback);
   try{
     const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{
