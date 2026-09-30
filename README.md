@@ -1,4 +1,4 @@
-# Neer — Every street, heard
+# Jan Seva — Every street, heard
 A working Track 1 prototype for neighbourhood drainage reporting and explainable investment planning in Kanpur.
 
 ## Run
@@ -37,4 +37,4 @@ The app opens in the citizen interface. Use the header selector or `?interface=a
 
 Reporting covers 75 districts via a district and locality selector. Eleven sample projects span Kanpur Nagar, Lucknow, Varanasi, Agra, Gorakhpur and Meerut. Other districts accept reports but require field assessment before mapped project recommendations. No coordinates or costs are invented for those reports.
 
-The prominent voice-navigation control supports Hindi and English commands, spoken confirmation and large tap shortcuts. It requires browser SpeechRecognition for speech input and never submits complaints automatically. About Neer includes screenshots captured from the actual application.
+The prominent voice-navigation control supports Hindi and English commands, spoken confirmation and large tap shortcuts. It requires browser SpeechRecognition for speech input and never submits complaints automatically. About Jan Seva includes screenshots captured from the actual application.
